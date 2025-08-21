@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login to {{APP_NAME}}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body style="background:#f4f4fa; margin:0; padding:0;">
+    <table
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      style="background:#f4f4fa;"
+    >
+      <tr>
+        <td align="center" style="padding-top:40px; padding-bottom:40px;">
+          <table
+            width="500"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="background:#fff; border-radius:16px; box-shadow:0 6px 24px rgba(44,62,80,0.07); padding:0;"
+          >
+            <tr>
+              <td align="center" style="padding:32px 24px 0 24px;">
+                <img
+                  src="{{LOGO_URL}}"
+                  width="170"
+                  height="100"
+                  alt="{{APP_NAME}} Logo"
+                  style="display:block; margin:0 auto 20px auto; border:none; outline:none;"
+                />
+                <div
+                  style="font-size:2rem; font-weight:700; color:#0075c9; margin-bottom:0.25em; letter-spacing:-1px; font-family:'Inter','Segoe UI',Arial,sans-serif;"
+                >
+                  Welcome Back!
+                </div>
+                <div
+                  style="font-size:1.1rem; color:#22223a; margin-bottom:2em; font-family:'Inter','Segoe UI',Arial,sans-serif;"
+                >
+                  Click the button below to log in securely to your account.<br
+                  />
+                  If you didn’t request this login, you can safely ignore this
+                  email.
+                </div>
+                <!-- LOGIN BUTTON -->
+                <a
+                  href="{{MAGIC_LINK}}"
+                  style="display:inline-block; padding:14px 36px; background-color:#0075c9; color:#fff !important; border-radius:30px; font-weight:600; font-size:1.08rem; letter-spacing:0.02em; text-decoration:none; box-shadow:0 3px 18px rgba(98,75,255,0.09); margin-bottom:1.2em; transition:background 0.2s; mso-padding-alt:0px 36px 0px 36px; font-family:'Inter','Segoe UI',Arial,sans-serif;"
+                >
+                  Log in to your account
+                </a>
+                <div
+                  style="margin:18px 0 2em 0; font-size:0.98em; color:#737491; word-break:break-all;"
+                >
+                  <span style="display:block; color:#888; margin-bottom:4px;">
+                    If you can't see the button, copy and paste this link into
+                    your browser:
+                  </span>
+                  <a
+                    href="{{MAGIC_LINK}}"
+                    style="color:#0075c9; word-break:break-all; text-decoration:underline;"
+                  >
+                    {{MAGIC_LINK}}
+                  </a>
+                </div>
+                <div style="color:#737491; font-size:0.98em; margin-top:18px;">
+                  This link is valid for 15 minutes.<br />
+                  For your security, this link will expire and can only be used
+                  once.
+                </div>
+                <div
+                  style="font-size:0.95em; color:#737491; margin-top:24px; text-align:center;"
+                >
+                  &copy;
+                  {{YEAR}}
+                  {{APP_NAME}}
+                  &mdash; Secure login powered by your new identity platform.
+                </div>
+              </td>
+            </tr>
+            <!-- Spacer row for bottom margin -->
+            <tr>
+              <td
+                height="32"
+                style="line-height:32px; font-size:1px;"
+              >&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
